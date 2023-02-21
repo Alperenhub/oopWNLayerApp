@@ -10,8 +10,8 @@ import java.util.List;
 
 public class ProductManager {
     private ProductDao productDao;
-    private List[] loggers;
-    public ProductManager(ProductDao productDao, List[] loggers) {
+    private Logger[] loggers;
+    public ProductManager(ProductDao productDao, Logger[] loggers) {
         this.productDao = productDao;
         this.loggers = loggers;
     }

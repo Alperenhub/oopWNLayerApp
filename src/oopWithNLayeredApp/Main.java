@@ -16,7 +16,7 @@ public class Main {
 
         Logger[] loggers = {new DataBaseLogger(), new FileLogger()};
 
-        ProductManager productManager = new ProductManager(new JdbcProductDao(), (List[]) loggers);
+        ProductManager productManager = new ProductManager(new JdbcProductDao(), (Logger[]) loggers);
         productManager.add(product1);
     }
 }
